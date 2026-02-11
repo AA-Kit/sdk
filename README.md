@@ -13,7 +13,5 @@
 A universal SDK for Account Abstraction across Ethereum L2s. Simplify smart account integration with one unified API.
 
 ## 🚀 Quick Start
+### ```bash pnpm add @your-org/core
 
-# ```bash
-
-# pnpm add @your-org/core
