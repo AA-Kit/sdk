@@ -2,23 +2,21 @@
   "name": "aa-kit",
   "private": true,
   "version": "0.0.1",
-  "description": "Universal Account Abstraction SDK for Ethereum L2s",
-  "author": "AA-Kit",
-  "license": "MIT",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "test": "turbo run test",
     "lint": "turbo run lint",
-    "clean": "turbo run clean && rm -rf node_modules"
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
   },
   "devDependencies": {
-     "turbo": "^2.0.0",
-    "typescript": "^5.3.0"
+    "prettier": "^3.2.0",
+    "turbo": "^2.8.7",
+    "typescript": "^5.9.2"
   },
   "engines": {
     "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "pnpm": ">=9.0.0"
   },
-  "packageManager": "pnpm@8.15.0"
+  "packageManager": "pnpm@9.0.0"
 }

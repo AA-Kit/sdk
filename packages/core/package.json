@@ -1,0 +1,38 @@
+{
+  "name": "@aa-kit/core",
+  "version": "0.0.1",
+  "description": "Core Account Abstraction utilities for Ethereum L2s",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "dev": "tsup src/index.ts --watch --dts --format esm,cjs",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts",
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "viem": "^2.20.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "typescript": "^5.9.2",
+    "vitest": "^2.1.8",
+    "eslint": "^9.17.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
